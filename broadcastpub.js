@@ -1,4 +1,3 @@
-
 var amqp = require('amqplib/callback_api');
 amqp.connect('amqp://test:test@172.16.70.30', function(error0, connection) {});
 amqp.connect('amqp://test:test@172.16.70.30', function(error0, connection) {
@@ -33,6 +32,5 @@ if (error0) {
 
     setTimeout(function() {
               connection.close();
-              process.exit(0)
               }, 500);
 });
